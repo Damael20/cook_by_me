@@ -52,7 +52,8 @@ export default {
 }
 
 .Recipe h2{
-  font-size: 12px;
+  font-size: 11px;
+  margin-top: 0px;
 }
 
 .Recipe p{

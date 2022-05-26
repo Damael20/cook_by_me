@@ -1,7 +1,10 @@
 <template>
   <main >
-    <div class="navigationArea"></div>
     <div class="pageClassic">
+      <div class="navigationArea">
+        <router-link class="retour" to="/"><img src="../assets/akar-icons_arrow-back-thick-fill.svg"></router-link>
+        <router-link class="profil" to="/"><img src="../assets/unsplash_rDEOVtE7vOs.svg"></router-link>
+      </div>
       <h1>{{reciepes.Name}}</h1>
       <div class="pageRecipe">
             <div class="PhotoAndInformations">
@@ -194,7 +197,7 @@ export default {
     .Ingredient{
       display: flex;
       align-items: center;
-      width: 200px;
+      width: 100%;
     }
 
     .Ingredient p{
