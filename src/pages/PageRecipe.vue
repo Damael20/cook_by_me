@@ -20,7 +20,7 @@
               
               <p>{{reciepes.Rating}}</p>
             </div>
-            <h2>Ingredients</h2>
+            <h2>Ingredients de la recette</h2>
             <div v-for="ingredient in  reciepes.Ingredients" :key="ingredient">
                 <div class="Ingredient">
                   <img src="./../assets/tabler_meat.svg">
