@@ -39,7 +39,7 @@
             />
             </div>
         </div>      
-        <router-link class="lien voirPlus" to="/recipe">Voir plus</router-link>
+        <router-link class="lien voirPlus" to="/homepage">Voir plus</router-link>
         
         <div class="iconeBasPage">
           <img src="./../assets/logo.svg">

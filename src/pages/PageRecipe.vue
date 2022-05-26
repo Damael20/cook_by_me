@@ -15,7 +15,7 @@
             </div>
             <div class="notation">
               <div v-for="note in  Math.floor(reciepes.Rating)" :key="note">
-                  <NoteLevel/>
+                  <NoteVue />
               </div>
               
               <p>{{reciepes.Rating}}</p>
@@ -43,11 +43,11 @@
       </div>
       <h3>Notez la recette</h3>
       <div class="note notation">
-          <NoteLevel/>
-          <NoteLevel/>
-          <NoteLevel/>
-          <NoteLevel/>
-          <NoteLevel/>
+          <NoteVue/>
+          <NoteVue/>
+          <NoteVue/>
+          <NoteVue/>
+          <NoteVue/>
       </div>
       <a class="lien voirPlus">Obtenir la recette</a>
       <div class="iconeBasPage">
@@ -59,7 +59,7 @@
 
 <script>
 import api from '@/plugins/axios'
-import NoteLevel from './../components/NoteVue'
+import NoteVue from './../components/NoteVue'
 import RecipeStep from './../components/StepVue.vue'
 
 export default {
@@ -68,7 +68,7 @@ export default {
     msg: String
   },
   components: {
-    NoteLevel,
+    NoteVue,
     RecipeStep
   },
   computed:{

@@ -4,11 +4,9 @@
       <router-link class="recipeLink" :to="'/recipe/'+reciepe.id">
         <p>Voir la recette</p>
         <div class="notation">
-          <NoteVue active="true"/>
-          <NoteVue />
-          <NoteVue />
-          <NoteVue />
-          <NoteVue />
+          <div v-for="note in  Math.floor(reciepe.attributes.Rating)" :key="note">
+            <NoteVue />
+          </div>
         </div>
        
         <h2>{{reciepe.attributes.Name}}</h2>

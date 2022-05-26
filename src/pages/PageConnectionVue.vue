@@ -28,9 +28,9 @@
         <hr>
       </div>
       <div class="RS">
-          <img src="./../assets/brandico_facebook-rect.svg">
+          <img src="./../assets/fa_facebook-official.svg">
           <img src="./../assets/Google_icon.svg">
-          <img src="./../assets/fa_twitter-square.svg">
+          <img src="./../assets/twitter_logo.svg">
       </div>
       <div class="iconeBasPage">
             <img src="./../assets/logo.svg">
