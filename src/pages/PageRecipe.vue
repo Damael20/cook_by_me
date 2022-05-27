@@ -2,7 +2,7 @@
   <main >
     <div class="pageClassic">
       <div class="navigationArea">
-        <router-link class="retour" to="/"><img src="../assets/akar-icons_arrow-back-thick-fill.svg"></router-link>
+        <router-link class="retour" to="/homepage"><img src="../assets/akar-icons_arrow-back-thick-fill.svg"></router-link>
         <router-link class="profil" to="/"><img src="../assets/unsplash_rDEOVtE7vOs.svg"></router-link>
       </div>
       <h1>{{reciepes.Name}}</h1>
@@ -99,19 +99,26 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-    h2{
+    .pageRecipe{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .pageRecipe h2{
+      
       margin-top: 20px;
       margin-bottom: 16px;
+      text-align: left;
+    }
+
+    .pageRecipe img{
+      width: 45%;
     }
 
     h3{
       margin: 0px;
       margin-top: 10px;
-    }
-
-    .videoInstructionsArea{
-      display: none;
-
     }
 
     .recipeInstructions{
@@ -120,25 +127,16 @@ export default {
 
     }
 
-    
-    .ImageInsructions{
-      border-radius: 25px;
-      width: 200px;
-      height: 200px;
+    .PhotoAndInformations{
+      display: flex;
+      border-radius: 26px;
     }
 
-    .pageRecipe{
-      width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .pageRecipe h2{
-      text-align: left;
-    }
-    .pageRecipe img{
-      width: 45%;
-    }
+    .PhotoAndInformations h3{
+      margin: 0px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }   
 
     .ImageInsructions{
       border-radius: 25px;
@@ -148,24 +146,11 @@ export default {
       background-position: 50% 50%;
     }
 
-
     .notation {
       align-items: center;
       display: flex;
       text-align: left;
       padding-top: 7px ;
-    }
-    
-    .notation p{
-      margin: 0px;
-      margin-left: 24px;
-      font-weight: bold
-      ;
-    }
-    
-    .note{
-      text-align: center;
-      justify-content: center;
     }
 
     .mainInformation{
@@ -174,17 +159,28 @@ export default {
       align-content: center;
     }
 
-     .mainInformation img{
-       margin-left: 20px;
-       width: 24px;
-       height: 24px;
-     }
-     .mainInformation h3{
-       width: 80px;
-       margin: 0px !important;
-       padding: 5px;
-       text-align: right;
-     }
+    .mainInformation img{
+      margin-left: 20px;
+      width: 24px;
+      height: 24px;
+    }
+    .mainInformation h3{
+      width: 80px;
+      margin: 0px !important;
+      padding: 5px;
+      text-align: right;
+    }
+
+    .notation p{
+      margin: 0px;
+      margin-left: 24px;
+      font-weight: bold;
+    }
+    
+    .note{
+      text-align: center;
+      justify-content: center;
+    }
 
     .note img{
       width: 25px;
@@ -204,22 +200,6 @@ export default {
         margin: 0px;
         margin-left: auto;
     }
-    
-    .PhotoAndInformations{
-      display: flex;
-    }
-
-    .PhotoAndInformations h3{
-      margin: 0px;
-      margin-top: 10px;
-      margin-left: 10px;
-    }
-
-    .PhotoAndInformations{
-      border-radius: 26px;
-    }
-
-    
 
     .Ingredient{
       padding-top: 10px;
@@ -227,6 +207,7 @@ export default {
       display: flex;
       align-content: center;
     }
+
     .Ingredient img{
       width: 25px;
     }
@@ -236,8 +217,12 @@ export default {
       line-height: auto;
     }
 
+    .videoInstructionsArea{
+      display: none;
+    }
+
     @media screen and (min-width: 1200px){
-        .pageClassic{
+      .pageClassic{
         width: 1196px;
         display: flex;
         flex-direction: column;
@@ -253,17 +238,17 @@ export default {
       }
 
       .PhotoAndInformations>img{
-          width: 485px;
-          height: 293px;
+        width: 485px;
+        height: 293px;
       }
 
       .Ingredient{
         width: 300px;
       }
 
-    .videoInstructionsArea{
-      display: initial;
-    }
+      .videoInstructionsArea{
+        display: initial;
+      }
     
 
     }

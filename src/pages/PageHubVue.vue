@@ -89,26 +89,13 @@ export default {
       display: flex;
       justify-content: center; 
     }
-    .groupFiltre{
-      margin-top: 15px;
-    }
-
-    .ligneFiltre{
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      display: flex;
-      justify-content: center;
-    }
-
     input[type="research"]{
-          background: #C4C4C4;
-        border: none;
-        width: 75%;
-        padding: 10px;
-        border-bottom-left-radius: 25px;
-        border-top-left-radius: 25px;
+      background: #C4C4C4;
+      border: none;
+      width: 75%;
+      padding: 10px;
+      border-bottom-left-radius: 25px;
+      border-top-left-radius: 25px;
     }
     .rechercher{
       background: #C4C4C4;
@@ -122,36 +109,42 @@ export default {
       border-bottom-right-radius: 10px;
       border-top-right-radius: 10px;
     }
+    .groupFiltre{
+      margin-top: 15px;
+    }
 
+    .ligneFiltre{
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: flex;
+      justify-content: center;
+    }
 
     .RecipeDisposition{
-  display: flex;
-  justify-content: center;
-  padding-top: 15px;
-}
+      display: flex;
+      justify-content: center;
+      padding-top: 15px;
+    }
 
-.RecipeArea{
-  display: grid;
-  grid-template-columns: repeat(2, 116px);
-  grid-gap: 20px;
-}
-
-@media screen and (min-width: 1200px) {
     .RecipeArea{
-      grid-template-columns: repeat(4, 186px);
+      display: grid;
+      grid-template-columns: repeat(2, 116px);
+      grid-gap: 20px;
     }
 
-    .Recipe{
-      width: 183px;
-      height: 183px;
-    }
+    @media screen and (min-width: 1200px) {
+      .RecipeArea{
+        grid-template-columns: repeat(4, 186px);
+      }
 
-    .hubContent{
-      width: 800px;
-    }
+      .hubContent{
+        width: 800px;
+      }
 
-    input[type="research"]{
-      width: 90%;
-    }
+      input[type="research"]{
+        width: 90%;
+      }
 }
 </style>

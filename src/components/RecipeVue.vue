@@ -1,6 +1,6 @@
 <template>
     
-    <div class="Recipe" :style="'background: url('+reciepe.attributes.Image.data.attributes.formats.small.url+'), rgba(0,0,0,0.5);'">
+    <div class="Recipe" :style="'background: url('+reciepe.attributes.Image.data.attributes.formats.small.url+'), rgba(0,0,0,0.5);background-size: cover;'">
       <router-link class="recipeLink" :to="'/recipe/'+reciepe.id">
         <p>Voir la recette</p>
         <div class="notation">
@@ -69,6 +69,13 @@ export default {
 .recipeLink{
   color: white;
   text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .Recipe{
+    width: 183px;
+    height: 183px;
+  }
 }
 
 </style>

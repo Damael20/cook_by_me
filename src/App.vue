@@ -12,6 +12,15 @@ export default {
 </script>
 
 <style>
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2A1E14;
+}
+
 body{
   margin: 0px;
   
@@ -35,6 +44,8 @@ main{
         border-radius: 25px;
         padding-top: 5px;
 }
+
+/* boutons */
 
 .lien {
       
@@ -63,19 +74,13 @@ main{
       margin-bottom: 70px;
       width: max-content;
 }
+/*bandeau retour et profil*/
 
-.iconeBasPage{
-      position: absolute;
-      left: calc(50% - 25px);
-      bottom: 5px;
-}
-
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2A1E14;
+.navigationArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .profil img{
@@ -89,24 +94,24 @@ main{
       width: 24px;
 }
 
-.navigationArea{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.iconeBasPage{
+      position: absolute;
+      left: calc(50% - 25px);
+      bottom: 5px;
 }
 
-
 @media screen and (min-width: 1200px){
+      main{
+            background-image: url('./assets/backgroundDesktop.png');
+      }
+      
       .pageClassic{
            width: 1196px;
             
       }
 
-      .filtre{
-            width: 100px;
-      }
-
+      /*bandeau retour et profil*/
+      
       .profil{
             position: absolute;
             top: 20px;
@@ -117,9 +122,10 @@ main{
             width: 86px;
             height: 86px;
       }
-
+      
       .retour{
             display: none;
       }
+      
 }
 </style>
